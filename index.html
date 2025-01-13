@@ -12,14 +12,38 @@
 
     <main>
 
-        <form action="#">
+        <form action="#" id="train_ticket_form">
 
-            <input id="distance-to-travel">
-            <input id="user-age">
+            <label for="user_name">Nome e Cognome</label>
+            <input type="text" id="user_name" name="user_name">
 
-            <button class="input_name-button">INVIA</button>
+            <label for="distance_to_travel">Km da percorrere</label>
+            <input type="text" id="distance_to_travel" name="distance_to_travel">
+
+            <select name="select_age_category" id="select_age_category">
+
+                <option value="adulti">Adulti</option>
+                <option value="ragazzi">Ragazzi</option>
+                <option value="anziani">Anziani</option>
+
+            </select>
+
+            <span id="button">Genera</span>
 
         </form>
+
+        <div id="train_ticket">
+
+            <div>
+                <h3>Nome Passeggero</h3>
+                <span id="ticket_user_name"></span>
+            </div>
+
+            <div>
+                <h3>Costo del biglietto</h3>
+                <span id="ticket_price"></span>
+            </div>
+        </div>
 
     </main>
 
